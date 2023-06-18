@@ -22,3 +22,17 @@ sum = 0
 for i in my_list:
     sum += i
 print(sum)
+
+for _ in range(1, 100, 3):
+    print(_)
+for _ in range(3):
+    print(list(range(10, 1, -2)))
+
+# ENUMERATE
+for i, char in enumerate('Sunil'):
+    print(f'{i}: {char}')
+
+for i, char in enumerate(list(range(200))):
+    print(f'the character at {i} is {char}')
+    if i == 50:
+        print(f'the character at {i} is {char}')
