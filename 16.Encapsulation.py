@@ -84,3 +84,5 @@ def start(object):
 
 
 start(eagle)
+for item in [eagle, boeing]:
+    item.fly()
