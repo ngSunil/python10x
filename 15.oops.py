@@ -16,7 +16,7 @@ print(type(testobject))
 class Student:
     membership = True  # Class Object Attribute and will be same for any object instantiated
 # The class object can be called using the ClassName.membership but the object level attributes have to be called using self.
-# __init__ is called anytime an object is instatiated
+# __init__ is called anytime an object is instatiated AND IT IS used to assign property to object during object instanciation
 
     def __init__(self, name='Anil', age=45):
         # or self.membership (You can call like this also)
@@ -25,7 +25,8 @@ class Student:
             self.age = age
 
     def candoProgramming(self):
-        return f'{self.name} can do programming'
+        return self
+        # return f'{self.name} can do programming'
 
     @classmethod
     def cls_method(cls, param1, param2):
@@ -45,3 +46,7 @@ print(student1.name, student1.age,
 student2 = Student()
 print(student2.name, student2.age,
       student2.membership, student2.candoProgramming())
+
+# self refers to the current object
+print(student1.candoProgramming())
+print(student2.candoProgramming())
