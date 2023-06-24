@@ -30,5 +30,5 @@ mysuperlist = SuperList()
 print(mysuperlist.__len__())
 # see how the your SuperList class has got powers of list too
 print(mysuperlist.append(45))
-
+print(mysuperlist)
 print(issubclass(SuperList, list))
