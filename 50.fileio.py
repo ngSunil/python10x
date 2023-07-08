@@ -1,0 +1,5 @@
+myfile = open('tips.txt')
+print(myfile.read())
+myfile.seek(0)
+print(myfile.readlines())
+myfile.close()
