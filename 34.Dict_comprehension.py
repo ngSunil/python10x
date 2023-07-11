@@ -9,11 +9,9 @@ print(new_dict)
 
 print({num: num*2 for num in [1, 2, 3]})
 
-# Examples
-# get only the duplicated from the list
 list_a = ['a', 'b', 'c', 'c', 'a']
-print(list(set([item for item in list_a if list_a.count(item) > 1])))
-# whereas the longer form would be like below
+print(list(set([item for item in
+                list_a if list_a.count(item) > 1])))
 duplicate_values = []
 for item in list_a:
     if list_a.count(item) > 1:

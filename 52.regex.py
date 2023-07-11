@@ -13,3 +13,11 @@ try:
     print('Strong Password')
 except AttributeError as err:
     print(f'Not as required password')
+
+pattern = r'[a-zA-Z0-9#$]{8,}\d$'
+text = "Abcd1234$9"
+
+if re.match(pattern, text):
+    print("Match found")
+else:
+    print("No match")
